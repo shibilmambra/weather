@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./weather.css">
+
+
+    <script src="https://kit.fontawesome.com/5897127e39.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e5739194.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="./production ID_4703568.mp4" type="video/mp4">
+    </video>
+
+
+
+    <h2>WEATHER</h2>
+
+    <div class="row w-100 me-0 ms-0">
+        <div class="col-6">
+            <form class="d-flex" role="search">
+                <input id="input" class="form-control w-50 ms-5" type="search" placeholder="Search Location">&nbsp;&nbsp;&nbsp;&nbsp;
+    
+                <button type="button" onclick="weather()"  style=" background-color: rgb(9, 19, 15);" id="button" class=" btn btn-dark" type="submit">Search</button>            </form>
+            <p class="mt-5 ms-5 date"><span id='p1'></span></p>
+        </div>
+        </div>
+        <div class="d-flex">
+            <div id="place" class="place"></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+            <div> 
+                
+                    <div id="country" class="country"></div>
+                </div>
+        </div>
+        
+        <div class="d-flex">
+            <img src="./toppng.com-weather-512x512.png" alt="">
+            <div id="temp" class="temp">
+            </div>
+        </div>
+        <div id="description" class="description mt-2"></div>
+    
+        <!-- <div class="row mt-3">
+            <h3>Humidity</h3>
+            <div class="col humidity">
+                <div class="humidity">72<span>%</span></div>
+    
+            </div>
+            <div class="col">
+                <h3 id="wind">Wind Speed </h3>
+    
+                <div class="wind">72<span>%</span></div>
+    
+            </div>
+        </div> -->
+        <div class="row mt-5 ms-3 w-100 me-0 ms-0">
+            <div class="col-3">
+                <h3>Humidity</h3>
+                    <div id="humidity" class="humidity"></div>
+                </div>
+            <div class="col-3"> 
+                <h3>Wind Speed</h3>
+                    <div id="wind" class="wind"></div>
+                </div>
+                <div class="col-3"> 
+                    <h3>Pressure</h3>
+                        <div id="pressure" class="pressure"></div>
+                    </div>
+                    <div class="col-3"> 
+                        <h3>Visibility</h3>
+                            <div id="visibility" class="visibility"></div>
+                        </div>
+                
+        </div>
+        
+
+
+
+    <script src="./weather.js"></script>
+</body>
+
+</html>

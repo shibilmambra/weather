@@ -1,0 +1,75 @@
+
+h2{
+    text-align: center;
+    color: rgb(30, 4, 4);
+}
+
+.date{
+    font-size: 30px;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(30, 4, 4);
+    overflow: hidden;
+}
+img{
+    
+    height: 150px;
+    margin-left: 70px;
+}
+#temp{
+   font-size: 50px;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .description{
+    font-size: 40px;
+    margin-left: 100px;
+  }
+  /* .humidity{
+    font-size: 30px;
+    margin-left: 55px;
+  }
+  h3{
+    margin-left: 100px;
+  }
+  
+  .wind{
+    margin-left: 70px;
+  } */
+  .humidity{
+    margin-left: 50px;
+  }
+
+  .wind{
+    margin-left: 50px;
+  }
+  .pressure{
+    margin-left: 50px;
+  }
+  .visibility{
+    margin-left: 50px;
+  }
+  .place{
+    font-size: 70px;
+    margin-left: 200px;
+
+  }
+  .country{
+    margin-top: 52px;
+    font-size: 25px;
+  }
